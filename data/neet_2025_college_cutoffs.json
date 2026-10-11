@@ -1,0 +1,818 @@
+{
+  "meta": {
+    "title": "NEET UG 2025 - indicative AIQ MBBS closing ranks for 50 government colleges",
+    "prepared_for": "NEETprep take-home assignment: NEET College Predictor",
+    "prepared_on": "2026-10-08",
+    "rank_type": "All India Rank (AIR) of the last student admitted in that category, final AIQ counselling round",
+    "categories": [
+      "UR",
+      "EWS",
+      "OBC",
+      "SC",
+      "ST"
+    ],
+    "disclaimer": "Indicative values for an assignment. A few points come from published 2025 MCC counselling summaries; the rest are estimates that follow 2025 trends. Not official MCC data and not for real counselling advice. Candidates are not graded on data accuracy."
+  },
+  "colleges": [
+    {
+      "id": "C001",
+      "college": "AIIMS New Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 48,
+        "EWS": 140,
+        "OBC": 217,
+        "SC": 1456,
+        "ST": 2088
+      }
+    },
+    {
+      "id": "C002",
+      "college": "Maulana Azad Medical College",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 103,
+        "EWS": 300,
+        "OBC": 381,
+        "SC": 5218,
+        "ST": 5543
+      }
+    },
+    {
+      "id": "C003",
+      "college": "JIPMER Puducherry",
+      "city": "Puducherry",
+      "state": "Puducherry",
+      "type": "Central Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 260,
+        "EWS": 650,
+        "OBC": 850,
+        "SC": 6200,
+        "ST": 7100
+      }
+    },
+    {
+      "id": "C004",
+      "college": "Vardhman Mahavir Medical College & Safdarjung Hospital",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "Central Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 310,
+        "EWS": 720,
+        "OBC": 960,
+        "SC": 7800,
+        "ST": 8400
+      }
+    },
+    {
+      "id": "C005",
+      "college": "AIIMS Jodhpur",
+      "city": "Jodhpur",
+      "state": "Rajasthan",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 350,
+        "EWS": 900,
+        "OBC": 1100,
+        "SC": 8500,
+        "ST": 9000
+      }
+    },
+    {
+      "id": "C006",
+      "college": "University College of Medical Sciences",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 420,
+        "EWS": 980,
+        "OBC": 1250,
+        "SC": 9200,
+        "ST": 11500
+      }
+    },
+    {
+      "id": "C007",
+      "college": "AIIMS Bhopal",
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 550,
+        "EWS": 1300,
+        "OBC": 1600,
+        "SC": 10000,
+        "ST": 12000
+      }
+    },
+    {
+      "id": "C008",
+      "college": "AIIMS Rishikesh",
+      "city": "Rishikesh",
+      "state": "Uttarakhand",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 620,
+        "EWS": 1450,
+        "OBC": 1750,
+        "SC": 10800,
+        "ST": 13500
+      }
+    },
+    {
+      "id": "C009",
+      "college": "AIIMS Bhubaneswar",
+      "city": "Bhubaneswar",
+      "state": "Odisha",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 720,
+        "EWS": 1600,
+        "OBC": 1950,
+        "SC": 11800,
+        "ST": 14500
+      }
+    },
+    {
+      "id": "C010",
+      "college": "Institute of Medical Sciences, BHU",
+      "city": "Varanasi",
+      "state": "Uttar Pradesh",
+      "type": "Central Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 800,
+        "EWS": 1700,
+        "OBC": 2100,
+        "SC": 12500,
+        "ST": 15500
+      }
+    },
+    {
+      "id": "C011",
+      "college": "AIIMS Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 950,
+        "EWS": 1950,
+        "OBC": 2350,
+        "SC": 13500,
+        "ST": 17000
+      }
+    },
+    {
+      "id": "C012",
+      "college": "AIIMS Raipur",
+      "city": "Raipur",
+      "state": "Chhattisgarh",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 1150,
+        "EWS": 2250,
+        "OBC": 2700,
+        "SC": 15000,
+        "ST": 19000
+      }
+    },
+    {
+      "id": "C013",
+      "college": "AIIMS Nagpur",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 1350,
+        "EWS": 2550,
+        "OBC": 3050,
+        "SC": 16500,
+        "ST": 21000
+      }
+    },
+    {
+      "id": "C014",
+      "college": "Seth GS Medical College & KEM Hospital",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 1700,
+        "EWS": 3000,
+        "OBC": 3400,
+        "SC": 18500,
+        "ST": 26000
+      }
+    },
+    {
+      "id": "C015",
+      "college": "AIIMS Mangalagiri",
+      "city": "Mangalagiri",
+      "state": "Andhra Pradesh",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 2000,
+        "EWS": 3300,
+        "OBC": 3800,
+        "SC": 19500,
+        "ST": 26500
+      }
+    },
+    {
+      "id": "C016",
+      "college": "King George's Medical University",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 2500,
+        "EWS": 3600,
+        "OBC": 5000,
+        "SC": 20000,
+        "ST": 30000
+      }
+    },
+    {
+      "id": "C017",
+      "college": "Bangalore Medical College & Research Institute",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 2700,
+        "EWS": 4000,
+        "OBC": 5100,
+        "SC": 21500,
+        "ST": 31000
+      }
+    },
+    {
+      "id": "C018",
+      "college": "AIIMS Kalyani",
+      "city": "Kalyani",
+      "state": "West Bengal",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 2900,
+        "EWS": 4400,
+        "OBC": 4600,
+        "SC": 23000,
+        "ST": 34000
+      }
+    },
+    {
+      "id": "C019",
+      "college": "AIIMS Madurai",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 3100,
+        "EWS": 4700,
+        "OBC": 4900,
+        "SC": 24500,
+        "ST": 36000
+      }
+    },
+    {
+      "id": "C020",
+      "college": "IPGMER & SSKM Hospital",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 3300,
+        "EWS": 5000,
+        "OBC": 5600,
+        "SC": 25500,
+        "ST": 37000
+      }
+    },
+    {
+      "id": "C021",
+      "college": "B.J. Government Medical College",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 3500,
+        "EWS": 5300,
+        "OBC": 6000,
+        "SC": 27000,
+        "ST": 39000
+      }
+    },
+    {
+      "id": "C022",
+      "college": "SMS Medical College",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 3700,
+        "EWS": 5500,
+        "OBC": 6200,
+        "SC": 28000,
+        "ST": 40000
+      }
+    },
+    {
+      "id": "C023",
+      "college": "Osmania Medical College",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 4000,
+        "EWS": 5900,
+        "OBC": 6600,
+        "SC": 29500,
+        "ST": 42000
+      }
+    },
+    {
+      "id": "C024",
+      "college": "AIIMS Bathinda",
+      "city": "Bathinda",
+      "state": "Punjab",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 4300,
+        "EWS": 6000,
+        "OBC": 5400,
+        "SC": 31000,
+        "ST": 46000
+      }
+    },
+    {
+      "id": "C025",
+      "college": "Madras Medical College",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 5000,
+        "EWS": 6800,
+        "OBC": 9000,
+        "SC": 30000,
+        "ST": 40000
+      }
+    },
+    {
+      "id": "C026",
+      "college": "AIIMS Gorakhpur",
+      "city": "Gorakhpur",
+      "state": "Uttar Pradesh",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 5200,
+        "EWS": 7000,
+        "OBC": 6100,
+        "SC": 38000,
+        "ST": 55000
+      }
+    },
+    {
+      "id": "C027",
+      "college": "Jawaharlal Nehru Medical College, AMU",
+      "city": "Aligarh",
+      "state": "Uttar Pradesh",
+      "type": "Central Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 5300,
+        "EWS": 7300,
+        "OBC": 7800,
+        "SC": 40000,
+        "ST": 58000
+      }
+    },
+    {
+      "id": "C028",
+      "college": "Gandhi Medical College",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 5500,
+        "EWS": 7600,
+        "OBC": 8200,
+        "SC": 33000,
+        "ST": 47000
+      }
+    },
+    {
+      "id": "C029",
+      "college": "AIIMS Deoghar",
+      "city": "Deoghar",
+      "state": "Jharkhand",
+      "type": "AIIMS",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 5761,
+        "EWS": 7417,
+        "OBC": 6456,
+        "SC": 43997,
+        "ST": 63378
+      }
+    },
+    {
+      "id": "C030",
+      "college": "Pt. B.D. Sharma PGIMS",
+      "city": "Rohtak",
+      "state": "Haryana",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 6000,
+        "EWS": 8200,
+        "OBC": 8900,
+        "SC": 36000,
+        "ST": 52000
+      }
+    },
+    {
+      "id": "C031",
+      "college": "Government Medical College & Hospital, Sector 32",
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 6300,
+        "EWS": 8500,
+        "OBC": 9300,
+        "SC": 37000,
+        "ST": 54000
+      }
+    },
+    {
+      "id": "C032",
+      "college": "B.J. Medical College",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 6700,
+        "EWS": 9000,
+        "OBC": 9800,
+        "SC": 39000,
+        "ST": 56000
+      }
+    },
+    {
+      "id": "C033",
+      "college": "Medical College Kolkata",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 7000,
+        "EWS": 9400,
+        "OBC": 10200,
+        "SC": 41000,
+        "ST": 58000
+      }
+    },
+    {
+      "id": "C034",
+      "college": "Grant Government Medical College & JJ Hospital",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 7500,
+        "EWS": 10000,
+        "OBC": 12000,
+        "SC": 40000,
+        "ST": 55000
+      }
+    },
+    {
+      "id": "C035",
+      "college": "Andhra Medical College",
+      "city": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 8000,
+        "EWS": 10600,
+        "OBC": 11800,
+        "SC": 43000,
+        "ST": 61000
+      }
+    },
+    {
+      "id": "C036",
+      "college": "Government Medical College",
+      "city": "Thiruvananthapuram",
+      "state": "Kerala",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 8500,
+        "EWS": 11200,
+        "OBC": 12400,
+        "SC": 45000,
+        "ST": 64000
+      }
+    },
+    {
+      "id": "C037",
+      "college": "MGM Medical College",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 9500,
+        "EWS": 12300,
+        "OBC": 13300,
+        "SC": 48000,
+        "ST": 70000
+      }
+    },
+    {
+      "id": "C038",
+      "college": "Government Medical College",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 10500,
+        "EWS": 13400,
+        "OBC": 14200,
+        "SC": 52000,
+        "ST": 75000
+      }
+    },
+    {
+      "id": "C039",
+      "college": "SCB Medical College",
+      "city": "Cuttack",
+      "state": "Odisha",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 11500,
+        "EWS": 14500,
+        "OBC": 15200,
+        "SC": 56000,
+        "ST": 80000
+      }
+    },
+    {
+      "id": "C040",
+      "college": "GSVM Medical College",
+      "city": "Kanpur",
+      "state": "Uttar Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 12500,
+        "EWS": 15600,
+        "OBC": 16100,
+        "SC": 60000,
+        "ST": 86000
+      }
+    },
+    {
+      "id": "C041",
+      "college": "Government Medical College",
+      "city": "Patiala",
+      "state": "Punjab",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 13500,
+        "EWS": 16500,
+        "OBC": 17000,
+        "SC": 65000,
+        "ST": 92000
+      }
+    },
+    {
+      "id": "C042",
+      "college": "Government Medical College",
+      "city": "Jaisalmer",
+      "state": "Rajasthan",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 14877,
+        "EWS": 15346,
+        "OBC": 15215,
+        "SC": 93826,
+        "ST": 120000
+      }
+    },
+    {
+      "id": "C043",
+      "college": "Government Medical College",
+      "city": "Tonk",
+      "state": "Rajasthan",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 15204,
+        "EWS": 16971,
+        "OBC": 15470,
+        "SC": 93550,
+        "ST": 96928
+      }
+    },
+    {
+      "id": "C044",
+      "college": "Patna Medical College & Hospital",
+      "city": "Patna",
+      "state": "Bihar",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 16000,
+        "EWS": 18500,
+        "OBC": 18000,
+        "SC": 72000,
+        "ST": 100000
+      }
+    },
+    {
+      "id": "C045",
+      "college": "Rajendra Institute of Medical Sciences",
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 17500,
+        "EWS": 20000,
+        "OBC": 19500,
+        "SC": 80000,
+        "ST": 110000
+      }
+    },
+    {
+      "id": "C046",
+      "college": "Government Medical College",
+      "city": "Srinagar",
+      "state": "Jammu & Kashmir",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 18500,
+        "EWS": 21500,
+        "OBC": 20800,
+        "SC": 88000,
+        "ST": 118000
+      }
+    },
+    {
+      "id": "C047",
+      "college": "Assam Medical College",
+      "city": "Dibrugarh",
+      "state": "Assam",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 19500,
+        "EWS": 22500,
+        "OBC": 22000,
+        "SC": 95000,
+        "ST": 125000
+      }
+    },
+    {
+      "id": "C048",
+      "college": "BRD Medical College",
+      "city": "Gorakhpur",
+      "state": "Uttar Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 21000,
+        "EWS": 24000,
+        "OBC": 23500,
+        "SC": 105000,
+        "ST": 135000
+      }
+    },
+    {
+      "id": "C049",
+      "college": "Indira Gandhi Medical College",
+      "city": "Shimla",
+      "state": "Himachal Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 22500,
+        "EWS": 25500,
+        "OBC": 24500,
+        "SC": 115000,
+        "ST": 145000
+      }
+    },
+    {
+      "id": "C050",
+      "college": "Autonomous State Medical College",
+      "city": "Lalitpur",
+      "state": "Uttar Pradesh",
+      "type": "State Govt",
+      "course": "MBBS",
+      "quota": "All India Quota (15%)",
+      "closing_rank_2025": {
+        "UR": 25800,
+        "EWS": 29600,
+        "OBC": 25900,
+        "SC": 132000,
+        "ST": 158000
+      }
+    }
+  ]
+}
