@@ -12,7 +12,17 @@ export default function Home() {
   const [category, setCategory] = useState<Category>("UR");
   const [homeState, setHomeState] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+  const [favoriteColleges, setFavoriteColleges] = useState<
+  (string | number)[]
+>([]); 
+useEffect(() => {
+  const saved = JSON.parse(
+    localStorage.getItem("favoriteColleges") || "[]"
+  );
+
+  setFavoriteColleges(saved);
+}, []);
+
   const [showLeadForm, setShowLeadForm] = useState(false);
   const [showResults, setShowResults] = useState(false);
 
@@ -444,12 +454,237 @@ useEffect(() => {
               emoji="🟠"
               colleges={results.reach}
             />
+            
+{/* Compare Colleges */}
+<div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+  <h2 className="text-2xl font-bold">
+    ⚖️ Compare Colleges
+  </h2>
+
+  <p className="mt-2 text-sm text-slate-400">
+    Compare college options based on their category and 2025 closing ranks.
+  </p>
+
+  <div className="mt-5 space-y-3">
+    {[...results.safe, ...results.moderate, ...results.reach]
+      .map((college: any) => ({
+        ...college,
+        group: results.safe.some((c: any) => c.id === college.id)
+          ? "Safe"
+          : results.moderate.some((c: any) => c.id === college.id)
+          ? "Moderate"
+          : "Reach",
+      }))
+      .filter(
+        (college: any, index: number, arr: any[]) =>
+          arr.findIndex((c: any) => c.id === college.id) === index
+      )
+      .slice(0, 6)
+      .map((college: any) => (
+        <div
+          key={college.id}
+          className="flex flex-col justify-between gap-2 rounded-xl border border-white/10 p-4 sm:flex-row sm:items-center"
+        >
+          <div>
+            <h3 className="font-semibold">{college.college}</h3>
+            <p className="mt-1 text-sm text-slate-400">
+              {college.city}, {college.state}
+            </p>
+          </div>
+
+          <div className="sm:text-right">
+            <p className="text-sm text-cyan-300">{college.group}</p>
+            <p className="text-xs text-slate-400">
+              Closing rank: {college.closingRank.toLocaleString()}
+            </p>
+          </div>
+        </div>
+      ))}
+  </div>
+</div>
+
+{/* Favourite Colleges */}
+<div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+  <h2 className="text-2xl font-bold">
+    ⭐ Favourite Colleges
+  </h2>
+
+  <p className="mt-2 text-sm text-slate-400">
+    Save colleges from your predictions to create a shortlist.
+  </p>
+
+  <div className="mt-5 space-y-3">
+    {[...results.safe, ...results.moderate, ...results.reach]
+      .filter(
+        (college: any, index: number, arr: any[]) =>
+          arr.findIndex((c: any) => c.id === college.id) === index
+      )
+      .map((college: any) => (
+        <div
+          key={college.id}
+          className="flex items-center justify-between gap-3 rounded-xl border border-white/10 p-4"
+        >
+          <div>
+            <h3 className="font-semibold">{college.college}</h3>
+            <p className="mt-1 text-sm text-slate-400">
+              {college.city}, {college.state}
+            </p>
+          </div>
+
+          <button
+  onClick={() => {
+    const saved = JSON.parse(
+      localStorage.getItem("favoriteColleges") || "[]"
+    );
+
+    const isSaved = saved.includes(college.id);
+
+    const updated = isSaved
+      ? saved.filter((id: string | number) => id !== college.id)
+      : [...saved, college.id];
+
+    localStorage.setItem(
+      "favoriteColleges",
+      JSON.stringify(updated)
+    );
+
+    setFavoriteColleges(updated);
+  }}
+  className={`rounded-lg border px-3 py-2 text-sm transition ${
+    favoriteColleges.includes(college.id)
+      ? "border-red-500/30 bg-red-500/10 text-red-400"
+      : "border-white/10 text-slate-300 hover:text-red-400"
+  }`}
+>
+  {favoriteColleges.includes(college.id)
+    ? "❤️ Saved"
+    : "♡ Save Favourite"}
+</button>
+        </div>
+      ))}
+  </div>
+
+  <p className="mt-4 text-xs text-slate-500">
+    Favourites are saved in this browser on this device.
+  </p>
+</div>
+
+
+{/* Counselling Checklist */}
+<div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+  <h2 className="text-2xl font-bold">
+    📋 Counselling Checklist
+  </h2>
+
+  <p className="mt-2 text-sm text-slate-400">
+    Track your admission preparation steps. Confirm the latest requirements
+    on official counselling websites.
+  </p>
+
+  <div className="mt-5 space-y-3">
+    {[
+      "Check official counselling notifications",
+      "Keep NEET scorecard and admit card ready",
+      "Prepare identity and applicable category certificates",
+      "Review college choices and eligibility",
+      "Complete registration and choice filling during the official window",
+      "Check allotment results and reporting instructions",
+    ].map((item) => (
+      <label
+        key={item}
+        className="flex cursor-pointer items-start gap-3 rounded-xl border border-white/10 p-3"
+      >
+        <input
+          type="checkbox"
+          className="mt-1 accent-cyan-400"
+        />
+        <span className="text-sm text-slate-200">{item}</span>
+      </label>
+    ))}
+  </div>
+
+  <a
+    href="https://mcc.nic.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-5 inline-flex rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
+  >
+    Check Official MCC Website →
+  </a>
+</div>
+
+{/* Feedback Section */}
+<div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+  <h2 className="text-2xl font-bold">
+    💬 Help Us Improve
+  </h2>
+
+  <p className="mt-2 text-sm text-slate-400">
+    How useful was your NEET college prediction experience?
+  </p>
+
+  <div className="mt-5 flex flex-wrap gap-3">
+    {[
+      { label: "Very useful", value: "very_useful" },
+      { label: "Somewhat useful", value: "somewhat_useful" },
+      { label: "Not useful", value: "not_useful" },
+    ].map((option) => (
+      <button
+        key={option.value}
+        type="button"
+        onClick={() => {
+          posthog.capture("predictor_feedback", {
+            feedback: option.value,
+            category,
+            score_band:
+              Number(score) >= 600
+                ? "600+"
+                : Number(score) >= 500
+                ? "500-599"
+                : Number(score) >= 400
+                ? "400-499"
+                : "below_400",
+          });
+          alert("Thanks for your feedback!");
+        }}
+        className="rounded-xl border border-white/10 px-4 py-3 text-sm transition hover:border-cyan-400 hover:bg-cyan-400/10"
+      >
+        {option.label}
+      </button>
+    ))}
+  </div>
+
+  <p className="mt-4 text-xs text-slate-500">
+    Feedback helps us improve the experience. Please verify college
+    predictions with official counselling information.
+  </p>
+</div>
+
+
 
             <p className="mx-auto mt-10 max-w-3xl text-center text-xs leading-5 text-slate-500">
               Disclaimer: College predictions are indicative estimates based
               on the provided NEET 2025 AIQ closing-rank data and approximate
               score-to-rank mappings. They are not official counselling advice.
             </p>
+            
+<div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-6 text-center">
+  <h2 className="text-xl font-bold">
+    Ready for the next step? 🎓
+  </h2>
+  <p className="mt-2 text-sm text-slate-400">
+    Review official counselling schedules, eligibility and choice-filling instructions before making admission decisions.
+  </p>
+  <a
+    href="https://mcc.nic.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-5 inline-flex rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+  >
+    Visit Official MCC Counselling →
+  </a>
+</div>
+
           </div>
         )}
       </section>
