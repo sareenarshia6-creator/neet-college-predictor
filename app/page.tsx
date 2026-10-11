@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import posthog from "posthog-js";
 import { estimateAIR } from "../lib/rankPredictor";
@@ -10,13 +11,13 @@ export default function Home() {
   const [score, setScore] = useState("");
   const [category, setCategory] = useState<Category>("UR");
   const [homeState, setHomeState] = useState("");
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const [showLeadForm, setShowLeadForm] = useState(false);
   const [showResults, setShowResults] = useState(false);
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-
   const [predictedRank, setPredictedRank] = useState<number | null>(null);
   const [results, setResults] = useState<any>(null);
   const [formStartTracked, setFormStartTracked] = useState(false);
@@ -63,8 +64,9 @@ export default function Home() {
     setShowLeadForm(true);
   };
 
- 
 const handleLeadSubmit = async () => {
+  if (isSubmitting) return;
+
   if (!name.trim()) {
     alert("Please enter your name.");
     return;
@@ -79,6 +81,9 @@ const handleLeadSubmit = async () => {
     alert("Please check your college chances first.");
     return;
   }
+
+  setIsSubmitting(true);
+
 
   try {
     const params = new URLSearchParams(window.location.search);
@@ -126,7 +131,9 @@ const handleLeadSubmit = async () => {
         ? error.message
         : "Something went wrong. Please try again."
     );
-  }
+  }finally {
+  setIsSubmitting(false);
+}
 };
 
 useEffect(() => {
@@ -332,12 +339,15 @@ useEffect(() => {
                   </p>
                 </div>
 
-                <button
-                  onClick={handleLeadSubmit}
-                  className="mt-6 w-full rounded-xl bg-cyan-400 px-5 py-4 font-semibold text-slate-950 hover:bg-cyan-300"
-                >
-                  Show My Results →
-                </button>
+                
+<button
+  onClick={handleLeadSubmit}
+  disabled={isSubmitting}
+  className="mt-6 w-full rounded-xl bg-cyan-400 px-5 py-4 font-semibold text-slate-950 hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-60"
+>
+  {isSubmitting ? "Submitting..." : "Show My Results →"}
+</button>
+
               </div>
             )}
           </>
