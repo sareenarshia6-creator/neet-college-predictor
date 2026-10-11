@@ -365,6 +365,32 @@ useEffect(() => {
                 Your College Chances
               </h1>
             </div>
+            
+<button
+  onClick={() => {
+    const message = [
+      "🎓 My NEET College Prediction",
+      `NEET Score: ${score}`,
+      `Estimated AIR: ${predictedRank?.toLocaleString()}`,
+      `Category: ${category === "UR" ? "General" : category}`,
+      `Home State: ${homeState}`,
+      "",
+      "Check your college chances:",
+      window.location.origin,
+    ].join("\n");
+
+    window.open(
+      `https://wa.me/?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }}
+  className="mx-auto mt-6 flex items-center justify-center gap-2 rounded-xl bg-green-500 px-6 py-3 font-semibold text-white transition hover:bg-green-400"
+>
+  <span>💬</span>
+  Share on WhatsApp
+</button>
+
 
             {/* Snapshot */}
             <div className="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-3">
