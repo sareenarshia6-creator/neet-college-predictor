@@ -355,8 +355,8 @@ useEffect(() => {
 
         {/* Results */}
         {showResults && results && (
-          <div>
-            <div className="text-center">
+         <div className="animate-[fadeIn_0.6s_ease-out]">
+  <div className="text-center">
               <div className="text-sm text-cyan-400">
                 YOUR NEET SNAPSHOT
               </div>
