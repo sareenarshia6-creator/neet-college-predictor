@@ -57,8 +57,7 @@ useEffect(() => {
 
     if (air === null) {
       alert(
-        "Our current 2025 score-to-rank data supports scores from 144 to 686."
-      );
+     "Our system says that:" );
       return;
     }
 
@@ -83,7 +82,7 @@ const handleLeadSubmit = async () => {
   }
 
   if (!/^[6-9]\d{9}$/.test(phone)) {
-    alert("Please enter a valid 10-digit Indian mobile number.");
+    alert("Our system says that: Please enter a valid 10-digit Indian mobile number.");
     return;
   }
 
