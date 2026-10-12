@@ -55,12 +55,12 @@ useEffect(() => {
 
     const air = estimateAIR(numericScore);
 
-    if (air === null) {
-      alert(
-     "Our system says that:" );
-      return;
-    }
-
+   if (air === null) {
+  alert(
+    "Our system says that: Our current 2025 score-to-rank data supports scores from 144 to 686."
+  );
+  return;
+}
     setPredictedRank(air);
 
     const collegeResults = predictColleges(
